@@ -1,0 +1,29 @@
+plugins {
+    id 'java'
+        id 'application'
+}
+application {
+    mainClass = 'Main'
+}
+group 'dev.selenium'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    
+     implementation 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
+     implementation 'org.junit.jupiter:junit-jupiter-api:5.5.1'
+     implementation 'org.slf4j:slf4j-jdk14:2.0.6'
+     implementation('net.sourceforge.htmlunit:htmlunit:2.69.0')
+implementation 'org.mariadb.jdbc:mariadb-java-client:2.2.0'
+
+}
+
+test {
+  
+    useJUnitPlatform()
+}
+
